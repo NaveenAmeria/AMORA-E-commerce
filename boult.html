@@ -1,0 +1,522 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Boult Products
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #232f3e;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .header .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .header .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+        .header .cart {
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: calc(25% - 20px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .product-item:hover {
+            transform: translateY(-5px);
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+        .product-item .details {
+            padding: 15px;
+        }
+        .product-item .details h3 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .product-item .details p {
+            margin: 0 0 10px;
+            color: #555;
+        }
+        .product-item .details .price {
+            font-size: 16px;
+            font-weight: 700;
+            color: #b12704;
+        }
+        .product-item .details .rating {
+            color: #ffa41c;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="logo">
+    Boult Products
+   </div>
+   <div class="search-bar">
+    <input placeholder="Search for products..." type="text"/>
+   </div>
+   <div class="text-2xl">
+    <a href="index.html">
+      <i class="fas fa-home"></i>
+    </a>
+  </div>
+  </div>
+  <div class="container">
+   <div class="product-list">
+    <div class="product-item">
+     <img alt="Boult Audio AirBass True Wireless Earbuds in black color" height="300" src="https://storage.googleapis.com/a1aa/image/esH7G6eIHroMwEWDxKWTrxDbuBGp7QmeDc9ED3EyNp1UOF8nA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio AirBass True Wireless Earbuds
+      </h3>
+      <p>
+       Color: Black
+      </p>
+      <p class="price">
+       ₹2,499
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio ProBass Over-Ear Wireless Headphones in red color" height="300" src="https://storage.googleapis.com/a1aa/image/cY4ox7F7NQ5GKdYVaeNmUTmj6MWXHSytBCQcIK8fZ985mCenA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio ProBass Over-Ear Wireless Headphones
+      </h3>
+      <p>
+       Color: Red
+      </p>
+      <p class="price">
+       ₹1,999
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio BassBuds Wired Earphones in blue color" height="300" src="https://storage.googleapis.com/a1aa/image/IDtTrZKLW2JZH9tZjkrTu8m9godR9mKLxGc4XGkqlkuxpgfJA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio BassBuds Wired Earphones
+      </h3>
+      <p>
+       Color: Blue
+      </p>
+      <p class="price">
+       ₹499
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio Curve Pro Neckband Wireless Earphones in green color" height="300" src="https://storage.googleapis.com/a1aa/image/QiCJblVsr6KOJxB1MdqDwPywlPfQ3rTzUELC4L2NeWGCnCenA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio Curve Pro Neckband Wireless Earphones
+      </h3>
+      <p>
+       Color: Green
+      </p>
+      <p class="price">
+       ₹1,299
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio AirBass PowerBuds True Wireless Earbuds in white color" height="300" src="https://storage.googleapis.com/a1aa/image/OvrJxdshu7a6GdnZSdihJPGPjkImMAfvOy7f7kWHfKb6NF8nA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio AirBass PowerBuds True Wireless Earbuds
+      </h3>
+      <p>
+       Color: White
+      </p>
+      <p class="price">
+       ₹2,999
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio ProBass Flex Over-Ear Wireless Headphones in black color" height="300" src="https://storage.googleapis.com/a1aa/image/GEfuMMSfgXg3uE86Ri6cn6vEjarynY1tUCryBWiRQMuInCenA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio ProBass Flex Over-Ear Wireless Headphones
+      </h3>
+      <p>
+       Color: Black
+      </p>
+      <p class="price">
+       ₹2,199
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio BassBox Bluetooth Speaker in black color" height="300" src="https://storage.googleapis.com/a1aa/image/G0K79JXUaposKpbwu6aEC7T8RCCHEafeziPbzQ9nXTW7mCenA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio BassBox Bluetooth Speaker
+      </h3>
+      <p>
+       Color: Black
+      </p>
+      <p class="price">
+       ₹1,499
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio BassBox Arc Bluetooth Speaker in blue color" height="300" src="https://storage.googleapis.com/a1aa/image/w6VD2TErUfX5N6LUJtostWSH52avwDbZoTe0rXAmK7GPnCenA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio BassBox Arc Bluetooth Speaker
+      </h3>
+      <p>
+       Color: Blue
+      </p>
+      <p class="price">
+       ₹1,799
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio AirBass MuseBuds True Wireless Earbuds in red color" height="300" src="https://storage.googleapis.com/a1aa/image/FH0c0ZQzdda5JFVFGmIUCqZr0OSdFaoEf91UU5XvOMYaTBfTA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio AirBass MuseBuds True Wireless Earbuds
+      </h3>
+      <p>
+       Color: Red
+      </p>
+      <p class="price">
+       ₹2,299
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio ProBass Boost Over-Ear Wireless Headphones in white color" height="300" src="https://storage.googleapis.com/a1aa/image/DCc4MuxBwhq8Odu1tsSD5i4EwevPD2ttp1kflY7PhOcBnCenA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio ProBass Boost Over-Ear Wireless Headphones
+      </h3>
+      <p>
+       Color: White
+      </p>
+      <p class="price">
+       ₹2,499
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio BassBuds X1 Wired Earphones in black color" height="300" src="https://storage.googleapis.com/a1aa/image/pLzUSos2WaY5BJ4QVu7fk0Tf1Aaigoa6DDVCrATl8jUNnCenA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio BassBuds X1 Wired Earphones
+      </h3>
+      <p>
+       Color: Black
+      </p>
+      <p class="price">
+       ₹399
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio AirBass LiveBuds True Wireless Earbuds in green color" height="300" src="https://storage.googleapis.com/a1aa/image/NHQqTamPYCbyFlGuUITQT9TbQRGsvkeFroiDLUN3moFbTBfTA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio AirBass LiveBuds True Wireless Earbuds
+      </h3>
+      <p>
+       Color: Green
+      </p>
+      <p class="price">
+       ₹2,199
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio ProBass Thunder Over-Ear Wireless Headphones in blue color" height="300" src="https://storage.googleapis.com/a1aa/image/K14l9Ah3Su4aFJjuft1fSsF1YtyPdGB8rzR19fb1Wy8fbK4PB.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio ProBass Thunder Over-Ear Wireless Headphones
+      </h3>
+      <p>
+       Color: Blue
+      </p>
+      <p class="price">
+       ₹2,799
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio BassBox Blast Bluetooth Speaker in red color" height="300" src="https://storage.googleapis.com/a1aa/image/6SmOxBPd2PbPIh2UUmtvULf2gSPmZeueefzw0rOFTv1fypgfJA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio BassBox Blast Bluetooth Speaker
+      </h3>
+      <p>
+       Color: Red
+      </p>
+      <p class="price">
+       ₹1,999
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio AirBass Combuds True Wireless Earbuds in black color" height="300" src="https://storage.googleapis.com/a1aa/image/KnkoZKU1bKKOHFaMf8XXmFufsRUcnUbg8Lomf5pi9XNxNF8nA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio AirBass Combuds True Wireless Earbuds
+      </h3>
+      <p>
+       Color: Black
+      </p>
+      <p class="price">
+       ₹2,399
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+     </div>
+    </div>
+    <div class="product-item">
+     <img alt="Boult Audio ProBass Boost Over-Ear Wireless Headphones in green color" height="300" src="https://storage.googleapis.com/a1aa/image/Gu69b2oDqB4eVSH6t0DkkIu5GWrqoEnNNobAgyYnA0jiTBfTA.jpg" width="300"/>
+     <div class="details">
+      <h3>
+       Boult Audio ProBass Boost Over-Ear Wireless Headphones
+      </h3>
+      <p>
+       Color: Green
+      </p>
+      <p class="price">
+       ₹2,499
+      </p>
+      <div class="rating">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In Page</title>
+  <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h2>General Information</h2>
+      <form>
+        <label for="title">Title</label>
+        <select id="title" name="title">
+          <option value="" disabled selected>Select</option>
+          <option value="mr">Mr.</option>
+          <option value="ms">Ms.</option>
+          <option value="mrs">Mrs.</option>
+          <option value="dr">Dr.</option>
+        </select>
+
+        <div class="input-group">
+          <div>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+          </div>
+          <div>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+          </div>
+        </div>
+
+        <label for="position">College name</label>
+        <input type="text" id="position" name="position">
+
+        <label for="company">Department</label>
+        <input type="text" id="company" name="company">
+
+        <div class="input-group">
+          <div>
+            <label for="business-arena">Position</label>
+            <input type="text" id="business-arena" name="business-arena">
+          </div>
+          <div>
+            <label for="employees">Age</label>
+            <input type="number" id="employees" name="employees">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="right-panel">
+      <h2>Contact Details</h2>
+      <form>
+        <label for="street">Street + Nr</label>
+        <input type="text" id="street" name="street">
+
+        <label for="additional-info">Additional Information</label>
+        <input type="text" id="additional-info" name="additional-info">
+
+        <div class="input-group">
+          <div>
+            <label for="zip-code">Zip Code</label>
+            <input type="text" id="zip-code" name="zip-code">
+          </div>
+          <div>
+            <label for="place">Place</label>
+            <select id="place" name="place">
+              <option value="" disabled selected>Select</option>
+              <option value="city1">Rajasthan</option>
+              <option value="city2">Other state</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="" disabled selected>Select</option>
+          <option value="country1">India</option>
+          <option value="country2">Uganda</option>
+          <option value="country1">Uruguay</option>
+          <option value="country1">Djibouti</option>
+          <option value="country1">Chad</option>
+        </select>
+
+        <div class="input-group">
+          <div>
+            <label for="code">Code +</label>
+            <input type="text" id="code" name="code">
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone">
+          </div>
+        </div>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email">
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms" name="terms">
+          <label for="terms">I do accept the <a href="tnc.html">Terms and Conditions</a> of your site.</label>
+        </div>
+
+        <button type="submit" class="btn">Register Badge</button>
+        <a href="index.html" class="back-button">Back</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

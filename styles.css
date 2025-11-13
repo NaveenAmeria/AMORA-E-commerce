@@ -1,0 +1,426 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+.header {
+    background-color: #131921;
+    color: #fff;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+.logo img {
+    width: 100px;
+    margin-right: 15px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.location i {
+    margin-right: 5px;
+}
+
+.search-bar {
+    display: flex;
+    flex: 1; /* Allows search bar to grow */
+    min-width: 200px; /* Prevents it from getting too small */
+    margin: 5px 15px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.header-nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.language, .account, .orders, .cart {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.account a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+.account div {
+    font-weight: 500;
+}
+
+.orders span {
+    font-size: 12px;
+}
+.orders div {
+    font-weight: 500;
+}
+
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cart i {
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+
+/* Header Bottom & Navbar */
+.header-bottom {
+    background-color: #232f3e;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping on desktop */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 15px;
+    padding: 10px 5px;
+    white-space: nowrap;
+}
+
+.navbar a:hover {
+    color: #febd69;
+    outline: 1px solid #fff;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+/* Product Grid Styling */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    padding: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.card-content-grid {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Makes content fill the card */
+}
+
+/* Grid layouts for card content */
+.card-content-grid.four-images {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.card-content-grid.two-images {
+    grid-template-columns: repeat(2, 1fr);
+}
+.card-content-grid.single-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-text {
+    font-size: 12px;
+}
+.image-text img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+.image-text a {
+    display: block;
+}
+
+.explore-link {
+    display: inline-block;
+    font-size: 14px;
+    color: #007185;
+    text-decoration: none;
+    margin-top: 10px;
+    align-self: flex-start; /* Aligns link to bottom left */
+}
+
+.explore-link:hover {
+    text-decoration: underline;
+}
+
+/* Bootstrap Carousel Customizations */
+/* (Your existing .container h2, .card, etc. styles for carousels are fine) */
+.container.my-4 h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.container.my-4 h2 a {
+    font-size: 0.9em;
+    color: #007185;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.container.my-4 .card {
+    border: none;
+    overflow: hidden;
+    box-shadow: none; /* Removing double shadow */
+}
+.container.my-4 .card img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Footer Styling (Kept as is from your file) */
+footer {
+    background-color: #232f3e;
+    color: #ffffff;
+    padding: 20px 0;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+}
+.footer-section h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+.footer-lower {
+    border-top: 1px solid #3a4553;
+    padding: 20px 10%;
+    text-align: center;
+}
+.footer-logo-lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.footer-logo-lang .amazon-logo {
+    width: 80px;
+    margin-right: 15px;
+}
+.footer-languages button {
+    background-color: #37475a;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.footer-languages button:hover {
+    background-color: #4a5568;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+.footer-links ul li {
+    margin: 5px 10px;
+}
+.footer-links ul li a {
+    color: #ffffff;
+    font-size: 0.85em;
+    text-decoration: none;
+}
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+.footer-terms {
+    color: #d3d3d3;
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+
+/* -------------------- */
+/* Responsive Media Queries */
+/* -------------------- */
+
+@media (max-width: 992px) {
+    .location, .language, .account, .orders {
+        display: none; /* Hide these on medium screens */
+    }
+    .search-bar {
+        order: 3; /* Move search bar to its own line */
+        width: 100%;
+        margin: 10px 0;
+    }
+    .header-top {
+        justify-content: space-between;
+    }
+    .header-nav-right {
+        margin-left: auto; /* Push cart to the right */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show hamburger menu */
+        order: 1; /* Move to before logo */
+    }
+    .logo {
+        order: 2; /* After toggle */
+    }
+    .cart {
+        order: 3; /* After logo */
+    }
+    .header-nav-right {
+        margin-left: 0;
+        display: contents; /* Makes cart part of the flex layout */
+    }
+    .search-bar {
+        order: 4;
+        width: 100%;
+    }
+    
+    /* Hide desktop nav elements */
+    .location, .language, .account, .orders, .header-nav-right {
+        display: none;
+    }
+    /* Show cart only */
+    .cart {
+        display: flex;
+    }
+
+    /* Mobile Nav Behavior */
+    .header-bottom {
+        padding: 0;
+    }
+    .navbar {
+        display: none; /* Hide nav by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: #232f3e;
+        position: absolute;
+        top: 100%; /* Position below header (will be fixed by JS) */
+        left: 0;
+        z-index: 100;
+        top: 121px; /* Adjust this based on your header's height */
+    }
+    .navbar.active {
+        display: flex; /* Show nav when active */
+    }
+    .navbar a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #3a4553;
+    }
+
+    .product-grid {
+        /* 2 columns for tablets */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        /* 1 column for phones */
+        grid-template-columns: 1fr;
+    }
+    .header-top {
+        /* Adjust for smaller phones */
+        padding: 10px;
+    }
+    .navbar.active {
+        top: 111px; /* Adjust as needed */
+    }
+}

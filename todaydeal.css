@@ -1,0 +1,437 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+.header {
+    background-color: #131921;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.location i {
+    margin-right: 5px;
+}
+
+.search-bar {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 8px;
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.language, .account, .orders, .cart {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.language i, .account i, .orders i {
+    margin-left: 5px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart i {
+    margin-right: 5px;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #232f3e;
+    padding: 10px 20px;
+}
+
+.space
+{
+    height: 50px;
+    width: 50%;
+    float: left;
+   
+}
+.diary
+{
+    height: 52px;
+    width: 100%;
+    background-color: #232f3e;
+    
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 15px;
+    padding: 5px 0;
+}
+
+.navbar a:hover {
+    color: #febd69;
+}
+
+
+/* -------------------- */
+
+
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.explore-link {
+    display: inline-block;
+    font-size: 14px;
+    color: #007185;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.explore-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.container h2 a {
+    font-size: 0.9em;
+    color: #007185;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.card {
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* ------- */
+
+
+
+footer {
+    background-color: #232f3e;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-lower {
+    border-top: 1px solid #3a4553;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.footer-logo-lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer-logo-lang .amazon-logo {
+    width: 80px;
+    margin-right: 15px;
+}
+
+.footer-languages button {
+    background-color: #37475a;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.footer-languages button:hover {
+    background-color: #4a5568;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.footer-links ul li {
+    margin: 5px 10px;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    font-size: 0.85em;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-terms {
+    color: #d3d3d3;
+    font-size: 0.8em;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.limit
+{
+    height: 600px;
+    width: 100%;
+    border:1px solid black;
+    margin: 0%;
+    padding: 0%;
+}
+.slide
+{
+    height: 300px;
+    width: 400px;
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-left: 550px;
+    text-align: left;
+}
+.boat
+{
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+}
+.bold
+{
+    text-align: left;
+    padding-left: 50px;
+
+}
+.bot{
+    text-align: left;
+    padding-left: 50px;
+}
+.continue
+{
+    background-color: #FFC221;
+    height: 30px;
+    width: 300px;
+    margin-top: 20px;
+    border-color: #FFC221;
+}
+.dist
+{
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fontainer {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.deal-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.deal-item img {
+    max-width: 150px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.deal-item .details {
+    flex: 1;
+}
+.deal-item .details h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+.deal-item .details p {
+    margin: 0 0 10px;
+    color: #555;
+}
+.deal-item .details .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b12704;
+}
+.deal-item .details .old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+}
+.deal-item .details .rating {
+    color: #f0c14b;
+}
